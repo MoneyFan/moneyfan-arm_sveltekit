@@ -44,3 +44,20 @@ To create a production version of your app:
 ```bash
 npm run build
 ```
+
+## SQLite WASM install
+
+Обновление официальной библиотеки `sqlite-wasm`
+
+```bash
+$curl -LS https://sqlite.org/2024/sqlite-wasm-3450100.zip -o ./build/sqlite-wasm.zip
+$unzip  ./build/sqlite-wasm.zip 'sqlite-wasm-3450100/jswasm/*' -d ./build
+$rm -r src/packages/sqlite-wasm/jswasm
+$mkdir -p src/packages/sqlite-wasm/jswasm
+$cp -r ./build/sqlite-wasm-3450100/jswasm/ ./src/packages/sqlite-wasm/jswasm
+$npx prettier --write ./src/packages/sqlite-wasm/jswasm
+```
+
+## Источник
+
+- [WebAssembly & JavaScript - sqlite.org/2024/sqlite-src-3450100.zip](https://sqlite.org/2024/sqlite-src-3450100.zip)
