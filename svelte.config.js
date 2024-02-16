@@ -14,8 +14,8 @@ const config = {
     adapter: adapter({
       // default options are shown. On some platforms
       // these options are set automatically — see below
-      pages: 'docs',
-      assets: 'docs',
+      // pages: 'docs',
+      // assets: 'docs',
       fallback: undefined,
       precompress: false,
       strict: true
@@ -23,7 +23,10 @@ const config = {
     alias: {
       $lib: './src/lib',
       $packages: './src/packages'
-    }
+    },
+    // paths: {
+    //   base: process.env.NODE_ENV === 'production' ? '/' : '/'
+    // }
   }
 };
 
