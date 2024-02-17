@@ -9,4 +9,9 @@
   });
 </script>
 
+<svelte:head>
+  <!-- NOTE: @see https://github.com/gzuidhof/coi-serviceworker -->
+  <script src="coi-serviceworker.js"></script>
+</svelte:head>
+
 <slot />

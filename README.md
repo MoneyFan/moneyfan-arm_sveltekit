@@ -61,3 +61,4 @@ $npx prettier --write ./src/packages/sqlite-wasm/jswasm
 ## Источник
 
 - [WebAssembly & JavaScript - sqlite.org/2024/sqlite-src-3450100.zip](https://sqlite.org/2024/sqlite-src-3450100.zip)
+- [Cross-origin isolation (COOP and COEP) through a service worker for situations in which you can't control the headers (e.g. GH pages)](https://github.com/gzuidhof/coi-serviceworker)
