@@ -13,5 +13,8 @@ export default defineConfig({
     https: true,
     proxy: {},
     port: 5173
+  },
+  worker: {
+    format: 'es'
   }
 });
